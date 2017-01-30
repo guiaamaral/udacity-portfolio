@@ -1,4 +1,4 @@
-*{
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -11,7 +11,12 @@ body {
     font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
     margin: 0 0 10px 0;
 }
@@ -56,19 +61,19 @@ hr {
 }
 
 .col-7 {
-    width: 58.33%
+    width: 58.33%;
 }
 
 .col-8 {
-    width: 66.66%
+    width: 66.66%;
 }
 
 .col-9 {
-    width: 75%
+    width: 75%;
 }
 
 .col-10 {
-    width: 83.33%
+    width: 83.33%;
 }
 
 .col-11 {
