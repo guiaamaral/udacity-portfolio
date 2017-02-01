@@ -6,69 +6,157 @@
     <meta name="viewport" content="width=devide-width, initial-scale=1">
     
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="row">
-                <div class="col-6">
-                    <img src="img/guiamaral.svg" class="logo" alt="Gui Amaral logotipo">
+    <header class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/guiamaral.svg" class="logo" alt="Gui Amaral logotipo">
+            </div>
+            <div class="col-sm-6 text-header text-right text-uppercase text-header">
+                <h1 class="title-super text-thin">Gui Amaral</h1>
+                <h4 class="title-middle">Desenvolvedor Front-end</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <hr>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="row">
+            <div class="col-sm-12">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/frontend_1920_2x.jpg 2x, img/frontend_960.jpg">
+                    <source media="(min-width: 480px)" srcset="img/frontend_960.jpg">
+                    <img class="img-responsive big-banner" src="img/frontend.jpg" alt="Desenvolvedor Front-End">
+                </picture>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-sm-12">
+                <h2 class="title-featured">Meus trabalhos</h2>
+            </div>
+        </section>
+        <section class="row text-justify">
+            <article class="col-sm-4">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/quantabrasil_640_2x.jpg 2x, img/quantabrasil_320.jpg">
+                    <img class="img-responsive details" src="img/quantabrasil.jpg" alt="Portal Quanta Brasil" data-toggle="modal" data-target="#myModalOne">
+                </picture>
+                <h3 class="title-job text-uppercase">Quanta Brasil</h3>
+                <p class="description">Mock-up de site desenvolvido com o framework Bootstrap, posteriormente transformado em um template para Wordpress.</p>
+            </article>
+            <article class="col-sm-4">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/quantastore_640_2x.jpg 2x, img/quantastore_320.jpg">
+                    <img class="img-responsive details" src="img/quantastore.jpg" alt="Quanta Store" data-toggle="modal" data-target="#myModalTwo">
+                </picture>
+                <h3 class="title-job text-uppercase">Quanta Store</h3>
+                <p class="description">Desenvolvimento de layout responsivo para e-commerce de equipamentos de áudio profissionais na plataforma Magento.</p>
+            </article>
+            <article class="col-sm-4">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/octuplos_640_2x.jpg 2x, img/octuplos_320.jpg">
+                    <img class="img-responsive details" src="img/octuplos.jpg" alt="Cancun - México" data-toggle="modal" data-target="#myModalThree">
+                </picture>
+                <h3 class="title-job text-uppercase">Óctuplos</h3>
+                <p class="description">Desenvolvimento de layout responsivo para empresa de consultoria de desenvolvimento humano na plataforma Wordpress.</p>
+            </article>
+        </section>
+        <section class="row">
+            <div class="col-sm-12">
+                <h2 class="title-featured">Contato</h2>
+            </div>
+        </section>
+        <section class="row">
+            <address class="col-sm-6">
+                <p class="text-bold">Guilherme Amaral</p>
+                <p><a href="mailto:gui.larama@gmail.com">gui.larama@gmail.com</a></p>
+                <p>+55 19 9 9184-3473</p>
+            </address>
+            <address class="col-sm-6">
+                <p class="text-bold">Redes sociais</p>
+                <p>Facebook</p>
+                <p>LinkedIn</p>
+            </address>
+        </section>
+    </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p class="text-small">Desenvolvido por Guilherme Amaral</p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <div class="modal fade" id="myModalOne" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Quanta Brasil</h4>
                 </div>
-                <div class="col-6 text-header text-right text-uppercase text-header">
-                    <h1 class="title-super text-thin">Gui Amaral</h1>
-                    <h4>Desenvolvedor Front-end</h4>
+                <div class="modal-body">
+                    <p><a href="http://quanta.quantastore.com.br/" target="_blank">Visite o site</a></p>
+                    <p><a href="http://quanta.quantastore.com.br/" target="_blank">Visite o mock-up</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <hr>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModalTwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Quanta Store</h4>
+                </div>
+                <div class="modal-body">
+                    <p><a href="http://www.quantastore.com.br/" target="_blank">Visite o site</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="row">
-                <div class="col-12">
-                    <picture>
-                        <source media="(min-width: 960px)" srcset="img/rio-de-janeiro_1920_2x.jpg 2x, img/rio-de-janeiro_960.jpg">
-                        <source media="(min-width: 480px)" srcset="img/rio-de-janeiro_960.jpg">
-                        <img class="img-responsive big-banner" src="img/rio-de-janeiro.jpg" alt="Rio de Janeiro - Brasil">
-                    </picture>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModalThree" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Óctuplos</h4>
+                </div>
+                <div class="modal-body">
+                    <p><a href="http://www.octuplos.com.br/" target="_blank">Visite o site</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
-            <section class="row">
-                <div class="col-12">
-                    <h2 class="title-featured">Belas cidades</h2>
-                </div>
-            </section>
-            <section class="row text-center">
-                <div class="col-4 box">
-                    <picture>
-                        <source media="(min-width: 960px)" srcset="img/veneza_640_2x.jpg 2x, img/veneza_320.jpg">
-                        <img class="img-responsive" src="img/veneza.jpg" alt="Veneza - Itália">
-                    </picture>
-                    <h3 class="title-place text-uppercase">Veneza - Itália</h3>
-                    <p class="description">Veneza é uma cidade no nordeste da Itália situado sobre um grupo de 117 pequenas ilhas separadas por canais e ligadas por pontes.</p>
-                </div>
-                <div class="col-4 box">
-                    <picture>
-                        <source media="(min-width: 960px)" srcset="img/londres_640_2x.jpg 2x, img/londres_320.jpg">
-                        <img class="img-responsive" src="img/londres.jpg" alt="Londres - Reino Unido">
-                    </picture>
-                    <h3 class="title-place text-uppercase">Londres - Reino Unido</h3>
-                    <p class="description">Londres é a capital da Inglaterra e do Reino Unido. Por dois milênios, foi um grande povoado e sua história remonta à sua fundação pelos romanos, quando foi nomeada Londínio.</p>
-                </div>
-                <div class="col-4 box">
-                    <picture>
-                        <source media="(min-width: 960px)" srcset="img/cancun_640_2x.jpg 2x, img/cancun_320.jpg">
-                        <img class="img-responsive" src="img/cancun.jpg" alt="Cancun - México">
-                    </picture>
-                    <h3 class="title-place text-uppercase">Cancun - México</h3>
-                    <p class="description">Cancun é uma cidade que fica na costa do estado de Quintana Roo, no México, em uma península que se tornou um dos centros turísticos mais importantes do país.</p>
-                </div>
-            </section>
-        </main>
+        </div>
     </div>
 </body>
 </html>
